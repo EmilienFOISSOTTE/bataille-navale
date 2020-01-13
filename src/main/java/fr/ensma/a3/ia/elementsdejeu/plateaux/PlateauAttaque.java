@@ -22,5 +22,8 @@ public class PlateauAttaque extends Plateau{
 	public void setListecases(List<CaseAttaquee> listecases) {
 		this.listecases = listecases;
 	}
-
+	
+	public void add(CaseAttaquee caseatt) {
+		
+	}
 }

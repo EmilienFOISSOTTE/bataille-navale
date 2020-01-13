@@ -2,16 +2,16 @@ package fr.ensma.a3.ia.elementsdejeu.bateaux;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Bateau extends {
+public class Bateau {
 	private int id;
 	private int longueur;	
 	private int posix, posigrec;
-	private boolean horizontal;
+	private EOrientation orientation;
 	
-	private TypeBateau typebateau;
+	private ETypeBateau typebateau;
 	private List<MorceauDeBateau> batiment;
 	
-	public Bateau(int id, int posix, int posigrec, TypeBateau montypebateau) {
+	public Bateau(int id, int posix, int posigrec, ETypeBateau montypebateau) {
 		this.id = id;
 		this.posix = posix;
 		this.posigrec = posigrec;
@@ -40,15 +40,52 @@ public class Bateau extends {
 		this.id = id;
 	}
 
-	public TypeBateau getTypebateau() {
+	public ETypeBateau getTypebateau() {
 		return typebateau;
 	}
 
-	public void setTypebateau(TypeBateau typebateau) {
+	public void setTypebateau(ETypeBateau typebateau) {
 		this.typebateau = typebateau;
 	}
 
 	public int getLongueur() {
 		return longueur;
 	}
+
+	public int getPosix() {
+		return posix;
+	}
+
+	public void setPosix(int posix) {
+		this.posix = posix;
+	}
+
+	public int getPosigrec() {
+		return posigrec;
+	}
+
+	public void setPosigrec(int posigrec) {
+		this.posigrec = posigrec;
+	}
+
+	public EOrientation getOrientation() {
+		return orientation;
+	}
+
+	public void setOrientation(EOrientation orientation) {
+		this.orientation = orientation;
+	}
+
+	public List<MorceauDeBateau> getBatiment() {
+		return batiment;
+	}
+
+	public void setBatiment(List<MorceauDeBateau> batiment) {
+		this.batiment = batiment;
+	}
+
+	public void setLongueur(int longueur) {
+		this.longueur = longueur;
+	}
+
 }
